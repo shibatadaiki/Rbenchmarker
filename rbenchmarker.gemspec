@@ -12,10 +12,9 @@ Gem::Specification.new do |spec|
 
   spec.summary       = 'Automatically log benchmarks for all methods'
   spec.description   = <<-EOF
-    Rbenchmarker is a gem that allows you to automatically benchmark the execution time of a method defined in a Ruby class and module.
-    Benchmark module (https://docs.ruby-lang.org/ja/latest/class/Benchmark.html) is used inside Rbenchmarker, and bm method is automatically applied to all target methods.
-    Rbenchmarker does not necessarily require Ruby on Rails, but it is built on the assumption that Ruby on Rails will be used.
-    There are some options that only work in the Ruby on Rails runtime environment.
+Rbenchmarker is a gem that allows you to automatically benchmark the execution time of a method defined in a Ruby class and module. Benchmark module (https://docs.ruby-lang.org/ja/latest/class/Benchmark.html) is used inside Rbenchmarker, and bm method is automatically applied to all target methods.
+However, ｍethod itself to which Rbenchmarker is applied remains unchanged, takes the same arguments as before, and returns the same return value as before.
+So you don't have to change the methods yourself, and you don't have to benchmark the methods one by one. Just launch the application as before and will automatically benchmark all targeted methods!
   EOF
   spec.homepage      = 'https://github.com/shibatadaiki/Rbenchmarker'
   spec.license       = 'MIT'
