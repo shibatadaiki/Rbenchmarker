@@ -28,12 +28,10 @@ Or install it yourself as:
 
 ## Add the launch process to your Ruby project
 
-Create the following file and add to your Ruby project.
+Add the following code to any file in your Ruby project.
 
 ```ruby
-# rbenchmarker_setup.rb
-
-# Note that you need to do Rbenchmarker.setup after reading all the files.
+# Note that you need to run `Rbenchmarker.setup` after all the files have been read.
 Rbenchmarker.setup switch: 'on',
                    output_log_path: nil,
                    except_classes: [],
@@ -49,7 +47,7 @@ irb(main):001:0> Rbenchmarker.setup switch: 'on', output_log_path: nil, except_c
 
  The `setup` method executes the process of adding the benchmark function to all the methods in the specified class and module.
 
-Note that you need to do `Rbenchmarker.setup` after reading all the files.
+Note that you need to run `Rbenchmarker.setup` after all the files (classes, modules) have been read.
 
 [Details of setup options](https://github.com/shibatadaiki/Rbenchmarker#about-setup-options)
 
@@ -94,7 +92,7 @@ I, [2020-12-22T16:24:06.327445 #54558]  INFO -- : == Start recording Rbenchmarke
 I, [2020-12-22T16:24:12.848277 #54558]  INFO -- : 
 report def test_method1 class method: current time
 user: 0.00000900, system: 0.00000700, total: 0.00001600, real: 0.00000700
-report def test_method1 class method: 1 times called
+report def test_method1 class method: total time for 1 times called
 user: 0.00000900, system: 0.00000700, total: 0.00001600, real: 0.00000700
 report def test_method1 class method: avarage time
 user: 0.00000900, system: 0.00000700, total: 0.00001600, real: 0.00000700
@@ -102,7 +100,7 @@ user: 0.00000900, system: 0.00000700, total: 0.00001600, real: 0.00000700
 I, [2020-12-22T16:24:14.009972 #54558]  INFO -- : 
 report def test_method1 class method: current time
 user: 0.00000500, system: 0.00000200, total: 0.00000700, real: 0.00000400
-report def test_method1 class method: 2 times called
+report def test_method1 class method: total time for 2 times called
 user: 0.00001400, system: 0.00000900, total: 0.00002300, real: 0.00001100
 report def test_method1 class method: avarage time
 user: 0.00000700, system: 0.00000450, total: 0.00001150, real: 0.00000550
@@ -110,7 +108,7 @@ user: 0.00000700, system: 0.00000450, total: 0.00001150, real: 0.00000550
 I, [2020-12-22T16:24:29.969068 #54558]  INFO -- : 
 report def test_method2 instance method: current time
 user: 0.00000600, system: 0.00000200, total: 0.00000800, real: 0.00000500
-report def test_method2 instance method: 1 times called
+report def test_method2 instance method: total time for 1 times called
 user: 0.00000600, system: 0.00000200, total: 0.00000800, real: 0.00000500
 report def test_method2 instance method: avarage time
 user: 0.00000600, system: 0.00000200, total: 0.00000800, real: 0.00000500
@@ -118,7 +116,7 @@ user: 0.00000600, system: 0.00000200, total: 0.00000800, real: 0.00000500
 I, [2020-12-22T16:24:30.545224 #54558]  INFO -- : 
 report def test_method2 instance method: current time
 user: 0.00000600, system: 0.00000200, total: 0.00000800, real: 0.00000500
-report def test_method2 instance method: 2 times called
+report def test_method2 instance method: total time for 2 times called
 user: 0.00001200, system: 0.00000400, total: 0.00001600, real: 0.00001000
 report def test_method2 instance method: avarage time
 user: 0.00000600, system: 0.00000200, total: 0.00000800, real: 0.00000500
@@ -126,7 +124,7 @@ user: 0.00000600, system: 0.00000200, total: 0.00000800, real: 0.00000500
 I, [2020-12-22T16:24:31.185216 #54558]  INFO -- : 
 report def test_method2 instance method: current time
 user: 0.00000600, system: 0.00000200, total: 0.00000800, real: 0.00000400
-report def test_method2 instance method: 3 times called
+report def test_method2 instance method: total time for 3 times called
 user: 0.00001800, system: 0.00000600, total: 0.00002400, real: 0.00001400
 report def test_method2 instance method: avarage time
 user: 0.00000600, system: 0.00000200, total: 0.00000800, real: 0.00000467
@@ -345,7 +343,7 @@ The gem is available as open source under the terms of the [MIT License](https:/
 
 ## Code of Conduct
 
-Everyone interacting in the Rbenchmarker project's codebases, issue trackers, chat rooms and mailing lists is expected to follow the [code of conduct](https://github.com/[USERNAME]/rbenchmarker/blob/master/CODE_OF_CONDUCT.md).
+Everyone interacting in the Rbenchmarker project's codebases, issue trackers, chat rooms and mailing lists is expected to follow the [code of conduct](https://github.com/shibatadaiki/Rbenchmarker/blob/main/CODE_OF_CONDUCT.md).
 
 ## Contributing
 
