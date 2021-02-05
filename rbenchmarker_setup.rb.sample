@@ -1,0 +1,8 @@
+# if you do not want to start rbenchmarker, set switch: 'off'.
+# 'output_log_path' determines the location of the log file that outputs the benchmark result.
+# Logs are placed directly under the './log' directory if './log' directory exists, or directly under the current directory if does not exist.
+# classes specified in 'except_classes' are not subject to benchmark.
+# modules specified in 'except_modules' are not subject to benchmark.
+
+# it is necessary to execute 'setup' after all classes and methods have been defined.
+Rbenchmarker.setup switch: 'on', output_log_path: nil, except_classes: [], except_modules: []
